@@ -10,7 +10,7 @@ namespace MyApi
     {
         public static void Register(HttpConfiguration config)
         {
-            // Конфигурация и службы Web API
+            // Конфигурация и службы Web API гг
 
             // Маршруты Web API
             config.MapHttpAttributeRoutes();
