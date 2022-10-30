@@ -17,9 +17,10 @@ namespace MyApi.Controllers
         private Entities db = new Entities();
 
         // GET: api/Persons
-        public IQueryable<Persons> GetPersons()
+        [ResponseType(typeof(List<ModelPerson>))]
+        public IHttpActionResult GetPersons()
         {
-            return db.Persons;
+            return Ok(db.Persons.ToList().ConvertAll(x => new ModelPerson(x)));
         }
 
         // GET: api/Persons/5
