@@ -17,7 +17,7 @@ namespace MyApi.Models
             id = persons.id_person;
             fname = persons.fname;
             lname = persons.lname;
-            img = persons.img;
+            img = persons.image;
             
     }
             
