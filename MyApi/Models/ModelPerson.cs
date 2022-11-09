@@ -10,13 +10,16 @@ namespace MyApi.Models
         public int id { get; set; }
         public string fname { get; set; }    
         public string lname { get; set; }
+       public string img { get; set; }
 
         public ModelPerson(Persons persons)
         {
             id = persons.id_person;
             fname = persons.fname;
             lname = persons.lname;
-        }
+            img = persons.img;
+            
+    }
             
     }
 }
